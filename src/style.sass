@@ -1,0 +1,248 @@
+body
+  margin: 0px
+
+body, input, textarea, select
+  padding: 0px 
+
+  color: #68717c
+
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 14px
+
+input
+  padding: 9px 16px
+
+textarea
+  padding: 7px 16px
+
+  resize: none
+
+input:focus, textarea:focus, select:focus, button
+  outline: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+.input, .select
+  box-sizing: border-box
+  width: 410px
+
+  border: 1px solid #d4d8db
+  border-radius: 3px
+  background-color: rgba(27, 40, 52, 0.01)
+  box-shadow: inset 0 1px 3px 0 rgba(27, 40, 52, 0.08)
+  
+.button
+  display: block
+
+  box-sizing: border-box
+  width: 178px
+  height: 36px
+
+  cursor: pointer
+
+  border: none
+  border-radius: 3px
+  background-color: #fff
+  &_blue
+    color: #2d74da
+    border: 1px solid #2d74da
+  &_red
+    color: #fa5e5b
+    border: 1px solid #fa5e5b
+  &_submit
+    width: 141px
+
+    color: #fff
+    background-image: linear-gradient(to bottom, #2d74da, #2367c8)    
+    box-shadow: 0 1px 0 0 rgba(27, 40, 52, 0.16)
+    &:hover
+      background-image: linear-gradient(to top, #2d74da, #276ccf, #2367c8)
+
+.container
+  width: 614px
+  margin-right: auto
+  margin-left: auto
+  
+.main-title
+  margin-top: 48px
+  margin-bottom: 23px
+
+  color: #1b2834
+
+  font-size: 24px
+  font-weight: 600
+  line-height: 38px
+
+.input-area
+  display: flex
+  &__alert
+    display: flex
+
+.alert__text
+  margin-top: 6px
+
+  line-height: 22px
+  &_done
+    color: #16c98d
+  &_error
+    color: #fa5e5b
+
+.alert__icon
+  width: 14px
+  height: 14px
+  margin: 10px 4px 0 25px
+
+
+.title__lable
+  margin: 24px 0 8px 0
+.title__input
+  height: 36px
+  &_error
+    border: solid 1px #fa5e5b
+
+.content__lable
+  margin: 29px 0 8px 0
+.content__input
+  height: 147px
+
+.phone-number__label
+  margin: 29px 0 8px 0
+.phone-number__input
+  height: 36px
+  &_error
+    border: solid 1px #fa5e5b
+
+.city__label
+  margin: 28px 0 12px 0
+
+.city__select
+  height: 36px
+  margin-bottom: 32px
+
+  background-color: #fff
+  
+.clip-button
+  display: none
+
+.clip-subbutton
+  display: flex
+  align-items: center
+  justify-content: center
+  &__image
+    width: 16px
+    height: 16px
+    margin-right: 7px
+
+    fill: #2b71d6
+  &_active
+    color: #fff
+    background-color: #1c5bb5
+    & > .clip-subbutton__image
+      fill: #fff
+  &:hover
+    color: #fff
+    background-color: #2d74da
+    & > .clip-subbutton__image
+      fill: #fff
+
+.sell-button
+  margin-top: 29px
+
+.photo-preview
+  display: flex
+
+  margin-top: 23px
+  &__img
+    max-height: 52px
+  &__sidebar
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__name
+    margin-left: 10px
+
+    color: #2d74da
+  &__button
+    position: relative
+
+    margin: 0 0 3px 10px
+    padding: 0
+
+    cursor: pointer
+
+    color: #fa5e5b
+    border: none
+    background: none
+    &::after
+      position: absolute
+      bottom: 1px
+
+      display: block
+
+      content: '............'
+      letter-spacing: 0.7px
+
+      line-height: 3px
+
+.post
+  display: flex
+  justify-content: space-between
+
+  height: 300px  //297
+  margin-bottom: 78px
+  &__img
+    width: 332px
+    height: 250px
+  &__title
+    color: #1b2834
+
+    font-size: 18px
+    line-height: 22px
+  &__text
+    margin-bottom: 6px
+
+    line-height: 22px
+  &__edit-button
+    margin-bottom: 14px
+
+.aside-column
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  
+.contacts__phone-number
+  display: flex
+
+  margin-bottom: 9px
+
+.contacts__location
+  display: flex
+
+.phone-number
+  &__text
+    margin-left: 7px
+
+    color: #1b2834
+
+    line-height: 22px
+  &__icon
+    width: 24px
+    height: 24px
+
+    background: url(./images/rectangle-3-copy-232.svg)
+    background-size: cover
+
+.location
+  &__text
+    margin-left: 9px
+
+    color: #1b2834
+
+    line-height: 22px
+  &__icon
+    width: 24px
+    height: 24px
+
+    background: url(./images/rectangle-3-copy-233.svg)
+    background-size: cover
